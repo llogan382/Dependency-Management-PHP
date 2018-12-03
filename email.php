@@ -1,4 +1,6 @@
 <?php
+//Tells php to only load this dependency on this page (not on every page)
+require __DIR__ . '/vendor/autoload.php';
 $subject = $name = $email = $message = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
